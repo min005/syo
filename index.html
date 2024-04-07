@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLO EXHIBITION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#top">TOP</a></li>
+                <li><a href="#foreword">FOREWORD</a></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#bookish">BOOKISH</a></li>
+                <li><a href="#mydad">MY DAD</a></li>
+                <li><a href="#guestbook">GUESTBOOK</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="top" class="content top">
+            <h1><img class="top_logo" src="img/logo_white.png" alt="「み」のロゴ白"></h1>
+            <a href="#foreword"><img class="top_img top_foreword" src="img/top_foreword_new.png"
+                    alt="foreword イラスト"></a>
+            <a href="#aboutme"><img class="top_img top_aboutme" src="img/top_aboutme.png" alt="about me イラスト"></a>
+            <a href="#bookish"><img class="top_img top_bookish" src="img/top_bookish_new.png" alt="bookish イラスト"></a>
+            <a href="#mydad"><img class="top_img top_mydad" src="img/top_dad_new.png" alt="my dad イラスト"></a>
+            <a href="#gallery"><img class="top_img top_gallery" src="img/top_gallery.png" alt="gallery イラスト"></a>
+            <a href="#guestbook"><img class="top_img top_guestbook" src="img/top_guestbook.png"
+                    alt="guestbook イラスト"></a>
+            <div class="top_text">
+                <p>FOLLOW MI</p>
+                <a href="#">https://xxxxxxxxxxxx</a>
+            </div>
+        </section>
+        <section id="foreword" class="content">
+            <div class="foreword_inner">
+                <h2><img src="img/logo_black.png" alt="「み」のロゴ黒"></h2>
+                <p class="foreword_text_ja">
+                    私が作った好きなものや欲しいもの、それを楽しみたいときに、いつでもどこからでも、すぐに集まるところになること。〔み〕の理想です。
+                </p>
+                <p class="foreword_text_en">
+                    To get together place I want & FAVORITE TO SHARE TO THEM is NOT only this concept BUT …
+                </p>
+            </div>
+        </section>
+        <section id="aboutme" class="content aboutme">
+            <h2>
+                <img src="img/aboutme_img.png" alt="aboutme イラスト">
+            </h2>
+            <div class="aboutme_text">
+                <p>
+                    miyukiです。<br>
+                    欲しいものは、自分で作ってみる、と続けていくうちに増えていったのが今回の作品たちです。
+                </p>
+                <p>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                </p>
+            </div>
+        </section>
+        <div id="gallery" class="content gallery_section1">
+
+        </div>
+        <div class="content gallery_section2">
+
+        </div>
+        <div id="bookish" class="content bookish">
+            <a href="#">
+                <img src="img/bookish_img.png" alt="bookish イラスト">
+            </a>
+        </div>
+        <div id="mydad" class="content mydad">
+            <div class="mydad_main">
+                <img class="mydad_main_img" src="img/mydad01.jpg" alt="メイン画像">
+            </div>
+
+            <ul class="mydad_sub_img">
+                <li><img src="img/mydad01.jpg" alt="mydad画像01"></li>
+                <li><img src="img/mydad02.jpg" alt="mydad画像02"></li>
+                <li><img src="img/mydad03.jpg" alt="mydad画像03"></li>
+                <li><img src="img/mydad04.jpg" alt="mydad画像04"></li>
+            </ul>
+        </div>
+        <div id="guestbook" class="content guestbook">
+            <p class="guestbook_text">
+                さいごまで見ていただきあだきありがとうございます。<br>
+                心より感謝します。
+                ここに名前とメッセージを入力いただけると大変励みになります。
+            </p>
+            <div class="message_box">
+                <p>message</p>
+                <form class="message_box_inner" action="php/contact.php" method="post">
+                    <label for="name" class="name_label">name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="message" class="message_label">message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

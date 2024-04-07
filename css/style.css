@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1.6rem;
+    font-weight: 300;
+    /* position: relative; */
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: relative;
+}
+
+header nav {
+    max-width: 960px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5rem 3rem 1rem 3rem;
+}
+
+header nav ul li a {
+    font-size: 1.7rem;
+}
+
+header nav ul li a:hover {
+    color: #FF2200;
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.content {
+    width: 100%;
+    max-width: 960px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+}
+
+
+#top {
+    background-image: url(../img/bg01.jpg);
+    position: relative;
+}
+
+.top_img {
+    width: 20%;
+    position: absolute;
+}
+
+.top_logo {
+    width: 33%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top_gallery {
+    top: 15%;
+    left: 7%;
+}
+
+.top_aboutme {
+    top: 10%;
+    left: 39%;
+}
+
+.top_guestbook {
+    top: 15%;
+    right: 7%;
+}
+
+.top_mydad {
+    bottom: 15%;
+    left: 7%;
+}
+
+.top_foreword {
+    bottom: 10%;
+    left: 39%;
+}
+
+.top_bookish {
+    bottom: 15%;
+    right: 7%;
+}
+
+.top a img:hover {
+    animation: hoverShake 0.1s infinite;
+}
+
+@keyframes hoverShake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.top_text {
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+}
+
+#foreword {
+    background-image: url(../img/bg02.jpg);
+}
+
+.foreword_inner {
+    width: 50%;
+}
+
+.foreword_inner h2 {
+    width: 70%;
+    margin: 40% auto 5rem auto;
+}
+
+.foreword_inner p {
+    line-height: 2.3rem;
+    letter-spacing: .22rem;
+    margin-left: 3rem;
+}
+
+.foreword_text_ja {
+    margin-bottom: 5rem;
+}
+
+#aboutme {
+    background-image: url(../img/aboutme_syo.png), url(../img/bg03.jpg);
+    background-size: contain, cover;
+    background-position: right top, left top;
+}
+
+.aboutme h2 {
+    width: 60%;
+    margin: 15% auto 5rem 5%;
+}
+
+.aboutme_text {
+    width: 50%;
+}
+
+.aboutme_text p {
+    line-height: 2.3rem;
+    letter-spacing: .22rem;
+    margin-left: 3rem;
+}
+
+.aboutme_text p:first-of-type {
+    margin-bottom: 5rem;
+}
+
+
+#gallery {
+    background-image: url(../img/bg04.jpg);
+}
+
+.gallery_section2 {
+    background-image: url(../img/bg05.jpg);
+}
+
+#bookish {
+    background-image: url(../img/bg06.jpg);
+    position: relative;
+}
+
+.bookish a {
+    width: 120%;
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+    z-index: 10;
+}
+
+#mydad {
+    background-image: url(../img/bg07.jpg);
+}
+
+.mydad_main {
+    width: 80%;
+    background-color: #fff;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 3.5%;
+}
+
+.mydad_sub_img {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1% 4%;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mydad_sub_img li {
+    width: 23%;
+}
+
+.mydad_sub_img li img{
+    cursor: pointer;
+}
+
+#guestbook {
+    background-image: url(../img/bg08.jpg);
+}
+
+.guestbook{
+    display: flex;
+    align-items: center;
+}
+
+.guestbook_text{
+    width: 50%;
+    line-height: 2.3rem;
+    letter-spacing: .22rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.message_box p{
+    color: rgba(51, 51, 51, 0.6);
+    margin-bottom: 5px;
+}
+.message_box_inner{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(51, 51, 51, 0.6);
+}
+
+.message_box_inner label{
+    width: 242px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.name_label{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.message_box_inner input{
+    width: 242px;
+    height: 40px;
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.message_label{
+    margin-top: 92px;
+    padding-bottom: 1rem;
+}
+
+.message_box_inner textarea{
+    background-color: rgba(51, 51, 51, 0.6);
+    border-radius: 0;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 242px;
+    height: 110px;
+}
+
+.message_box_inner button{
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #FF2200;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}
+
