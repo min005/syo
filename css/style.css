@@ -55,16 +55,16 @@ header nav ul li a:hover {
     text-decoration-color: #fff;
 }
 
-header::after {
+/* header::after {
     content: '';
     display: block;
     width: 100%;
     margin-left: 960px;
-    height: max-content;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 20;
-}
+} */
 
 .slides-wrapper {
     width: 100%;
@@ -309,7 +309,8 @@ input[name="tab_switch"] {
     position: absolute;
     cursor: pointer;
 }
-.item:hover{
+
+.item:hover {
     animation: hoverShake 0.1s infinite;
 }
 
@@ -655,11 +656,23 @@ input[name="tab_switch"] {
 
 #guestbook {
     background-image: url(../img/bg08.jpg);
+    position: relative;
 }
 
-.guestbook {
+.guestbook{
     display: flex;
     align-items: center;
+}
+
+.guestbook:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
 }
 
 .guestbook_inner {
