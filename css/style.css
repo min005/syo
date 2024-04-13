@@ -60,7 +60,7 @@ header::after {
     display: block;
     width: 100%;
     margin-left: 960px;
-    height: 100vh;
+    height: max-content;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     z-index: 20;
@@ -69,7 +69,6 @@ header::after {
 .slides-wrapper {
     width: 100%;
     display: flex;
-    overflow-x: scroll;
     overflow-y: hidden;
 }
 
@@ -212,7 +211,7 @@ header::after {
     position: relative;
 }
 
-.gallery_zoom{
+.gallery_zoom {
     width: 50%;
     padding: 1rem;
     background-color: #fff;
@@ -223,15 +222,15 @@ header::after {
     opacity: 0;
 }
 
-.gallery_zoom.display{
+.gallery_zoom.display {
     opacity: 1;
 }
 
-.gallery_zoom img{
+.gallery_zoom img {
     height: 100%;
 }
 
-.gallery_zoom p{
+.gallery_zoom p {
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: #FF2200;
@@ -256,7 +255,7 @@ header::after {
     margin-left: 6rem;
 }
 
-.tab_label:first-of-type{
+.tab_label:first-of-type {
     margin-left: 17rem;
 }
 
@@ -270,7 +269,7 @@ header::after {
     width: 80%;
     height: 550vh;
     /* background-color: bisque; */
-    animation :infinity-scroll-up 200s infinite linear 0.5s both;
+    animation: infinity-scroll-up 200s infinite linear 0.5s both;
 }
 
 @keyframes infinity-scroll-up {
@@ -309,6 +308,9 @@ input[name="tab_switch"] {
     aspect-ratio: 3/4;
     position: absolute;
     cursor: pointer;
+}
+.item:hover{
+    animation: hoverShake 0.1s infinite;
 }
 
 .item img {
@@ -476,7 +478,7 @@ input[name="tab_switch"] {
     left: 3%;
 }
 
-.item21{
+.item21 {
     top: 2550px;
     left: 37%;
 }
@@ -526,7 +528,7 @@ input[name="tab_switch"] {
     right: 15%;
 }
 
-.item31{
+.item31 {
     top: 4470px;
     left: 15%;
 }
@@ -669,12 +671,12 @@ input[name="tab_switch"] {
     z-index: 25;
 }
 
-.guestbook_text{
+.guestbook_text {
     width: 50%;
     padding: 0 3%;
 }
 
-.guestbook_text p:first-of-type{
+.guestbook_text p:first-of-type {
     line-height: 2.3rem;
     letter-spacing: .3rem;
     margin-bottom: 80px;
